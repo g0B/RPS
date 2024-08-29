@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="javascript.js" defer>    </script>
 </head>
+<div style="text-align: center;">
+    <h1>Current Score</h1>
+    <!-- Flex container to align Player and Computer headers -->
+    <div style="display: flex; justify-content: space-between; padding: 0 20%; align-items: center;">
+        <!-- Player section -->
+        <div>
+            <h2>Player</h2>
+            <p id="player-score">0</p>
+        </div>
+        <!-- Computer section -->
+        <div>
+            <h2>Computer</h2>
+            <p id="computer-score">0</p>
+        </div>
+    </div>
+    <div style="margin-top: 20px;">
+        <button id="rock-button">Rock</button>
+        <button id="paper-button">Paper</button>
+        <button id="scissors-button">Scissors</button>
+    </div>
+    <div id="results" style="margin-top: 20px;">
+        <h3>Round - <span id="round-number"></span></h3>
+        <p>Player's Move: <span id="player-move"></span></p>
+        <p>Computer's Move: <span id="computer-move"></span></p>
+        <h3>Winner: <span id="winner"></span></h3>
+    </div>
+</div>
+<div id="container">
+</div>
+
 <body>
-    <script src="javascript.js">    </script>
-    
 </body>
+
 </html>
